@@ -1,0 +1,22 @@
+{
+  "name": "fakeuuid",
+  "version": "1.0.0",
+  "description": "A simple uuid maker using js",
+  "main": "./src/FakeUUID.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shariar-Hasan/FakeUUID.git"
+  },
+  "keywords": [
+    "uuid"
+  ],
+  "author": "Shariar Hasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shariar-Hasan/FakeUUID/issues"
+  },
+  "homepage": "https://github.com/Shariar-Hasan/FakeUUID#readme"
+}
