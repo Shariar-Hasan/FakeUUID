@@ -1,6 +1,6 @@
 # FakeUUID
 
-`FakeUUID` is a lightweight package for generating random UUIDs (Universal Unique Identifiers) with customizable options.
+`FakeUUID` is a lightweight package for generating random UUIDs (Universal Unique Identifiers) with customizable options. Each time it creates totally unique id/ key.
 
 ## Installation
 
@@ -8,7 +8,7 @@ To use FakeStore, simply download the code from this repository and include it i
 You can install the package using npm:
 
 ```
-npm install fake-uuid
+npm install @ethico/fakeuuid
 ```
 
 Alternatively, you can download the `FakeStore.js` file and include it in your project manually.
@@ -21,7 +21,7 @@ or You can use the CDN for it
 for importing :
 
 ```javascript
-import FakeUUID from "fakeuuid";
+import FakeUUID from "@ethico/fakeuuid";
 ```
 
 ## Usage
