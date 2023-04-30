@@ -4,14 +4,14 @@
 
 ## Installation
 
-To use FakeStore, simply download the code from this repository and include it in your project.
+To use FakeUUID, simply download the code from this repository and include it in your project.
 You can install the package using npm:
 
 ```
 npm install @ethico/fakeuuid
 ```
 
-Alternatively, you can download the `FakeStore.js` file and include it in your project manually.
+Alternatively, you can download the `FakeUUID.js` file and include it in your project manually.
 or You can use the CDN for it
 
 ```html
