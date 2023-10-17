@@ -36,7 +36,7 @@ const uuid = FakeUUID({
   upperAlphabets: false,
   specialChars: "",
 });
-console.log(uuid); // Output: user_hivzjxod_id
+console.log(uuid); // Output: user_hiv2jx6dhfpj_id
 ```
 
 ## Options
@@ -45,7 +45,7 @@ console.log(uuid); // Output: user_hivzjxod_id
 | ---------------- | ------------------------------------------------------------------ | ------------- | ------------- |
 | `startsWith`     | A string with which the UUID should start.                         | `""`          | optional |
 | `endsWith`       | A string with which the UUID should end.                           | `""`          | optional |
-| `length`         | The total length of the UUID.(excluding startsWith & endsWith)                                      | `32`          | optional |
+| `length`         | The total length of the UUID(excluding startsWith & endsWith).                                      | `32`          | optional |
 | `digit`          | Whether to include digits in the UUID.                             | `true`        | optional |
 | `lowerAlphabets` | Whether to include lowercase letters in the UUID.                  | `true`        | optional |
 | `upperAlphabets` | Whether to include uppercase letters in the UUID.                  | `false`       | optional |
