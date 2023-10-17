@@ -13,15 +13,21 @@ const FakeUUID = (options = {}) => {
   const alphabetsUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const alphabetsLower = "abcdefghijklmnopqrstuvwxyz";
   const allowedChars = [
+    // adding digits
     ...(digit ? digits.split("") : []),
+    // upper alpha
     ...(upperAlphabets ? alphabetsUpper.split("") : []),
+    // lower alpha
     ...(lowerAlphabets ? alphabetsLower.split("") : []),
+    // specialchar
     ...specialChars.split(""),
-  ];
+  ]
+    // shuffling them
+    .sort(() => Math.random() - 0.5);
 
   let uuid = startsWith;
 
-  while (uuid.length < length - endsWith.length) {
+  while (uuid.length < length + startsWith.length) {
     const randomIndex = Math.floor(Math.random() * allowedChars.length);
     uuid += allowedChars[randomIndex];
   }
@@ -30,12 +36,9 @@ const FakeUUID = (options = {}) => {
   return uuid;
 };
 
-// Export the class for CommonJS environments
+// Export the function for CommonJS environments
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = FakeStore;
+  module.exports = FakeUUID;
 }
 
-// Export the class for ES6 environments
-if (typeof exports !== "undefined") {
-  exports.default = FakeStore;
-}
+export default FakeUUID;
