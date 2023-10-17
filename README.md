@@ -15,7 +15,7 @@ Alternatively, you can download the `FakeUUID.js` file and include it in your pr
 or You can use the CDN for it
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Shariar-Hasan/FakeUUID@1.0.0/src/FakeUUID.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Shariar-Hasan/FakeUUID/src/FakeUUID.min.js"></script>
 ```
 
 for importing :
@@ -41,15 +41,15 @@ console.log(uuid); // Output: user_hivzjxod_id
 
 ## Options
 
-| Option           | Description                                                        | Default value |
-| ---------------- | ------------------------------------------------------------------ | ------------- |
-| `startsWith`     | A string with which the UUID should start.                         | `""`          |
-| `endsWith`       | A string with which the UUID should end.                           | `""`          |
-| `length`         | The total length of the UUID.                                      | `32`          |
-| `digit`          | Whether to include digits in the UUID.                             | `true`        |
-| `lowerAlphabets` | Whether to include lowercase letters in the UUID.                  | `true`        |
-| `upperAlphabets` | Whether to include uppercase letters in the UUID.                  | `false`       |
-| `specialChars`   | A string containing special characters to be included in the UUID. | `""`          |
+| Option           | Description                                                        | Default value | Required |
+| ---------------- | ------------------------------------------------------------------ | ------------- | ------------- |
+| `startsWith`     | A string with which the UUID should start.                         | `""`          | optional |
+| `endsWith`       | A string with which the UUID should end.                           | `""`          | optional |
+| `length`         | The total length of the UUID.(excluding startsWith & endsWith)                                      | `32`          | optional |
+| `digit`          | Whether to include digits in the UUID.                             | `true`        | optional |
+| `lowerAlphabets` | Whether to include lowercase letters in the UUID.                  | `true`        | optional |
+| `upperAlphabets` | Whether to include uppercase letters in the UUID.                  | `false`       | optional |
+| `specialChars`   | A string containing special characters to be included in the UUID. | `""`          | optional |
 
 You can use zero or more of the following options.
 
